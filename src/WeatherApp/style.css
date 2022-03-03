@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.container{
+    position: relative;
+    overflow: hidden;
+    margin: 9% auto;
+    width: 50vw;
+    height: 60vh;
+    padding: 3em 4em 5em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5bbdd;
+    border-radius: 16px;
+    box-shadow: 0 0 30px -12px black;
+}
+.box{
+    text-align: center;
+}
+.inputData{
+    position: absolute;
+    top: 10%;
+    left: 6%;
+}
+.inputData > input{
+    font-size: 1.3em;
+    min-width: 20vw;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 0 30px -12px #a5bbdd;
+}
+.temp > h1{
+    margin-left: 30px;
+    font-size: 5em;
+    font-weight: 500;
+}
+.temp > h1 > sup{
+    font-size: 0.5em;
+    font-weight: 300;
+}
+.temp > p{
+    margin-top: -20px;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.temp > span > sup{
+    font-size: 0.6em;
+    font-weight: 500;
+}
+.info{
+    margin-top: 3rem;
+}
+.info > h3{
+    font-size: 2em;
+    font-weight: 500;
+}
+.info > h4{
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+    background: white;
+    border-radius: 16px;
+}
+
+.border{
+    margin: 0 50px;
+    width: 5px;
+    height: 150px;
+    background: black;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+.addInfo > h5{
+    margin: 10px;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.wave{
+    margin-left: -25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50rem;
+    height: 50rem;
+    background: white;
+    border-radius: 40%;
+}
+.one{
+    opacity: 0.3;
+    animation: wave 4s linear infinite;
+}
+.two{
+    opacity: 0.2;
+    animation: wave 3s linear infinite;
+}
+.three{
+    opacity: 0.1;
+    animation: wave 1s linear infinite;
+}
+@keyframes wave {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+footer{
+    margin-bottom: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+footer > a{
+    color: #a5bbdd;
+    text-decoration: none;
+}
